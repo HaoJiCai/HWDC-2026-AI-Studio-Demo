@@ -1,0 +1,6 @@
+{
+  "name": "彰化有料特輯《爌肉之城》",
+  "description": "彰化有料特輯《爌肉之城》的身世之謎？1+1+1 有料生活米袋、有料生意碗、有料特輯刊物一次呈上。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,1148 @@
+<!doctype html>
+<html lang="zh-TW" class="scroll-smooth">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>彰化有料特輯《爌肉之城》的身世之謎？｜1+1+1 有料典藏預購</title>
+    <meta name="description" content="從2025年魔幻出擊的《彰化有料100》到即將發行的彰化有料特輯《爌肉之城》。白色方塊工作室、旅庫彰化、彰化旅行+ 原班人馬再度集結，1+1+1 有料生活米袋、有料生意碗、有料特輯刊物，一次呈上。" />
+    
+    <!-- Open Graph / Social Sharing -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="彰化有料特輯《爌肉之城》的身世之謎？" />
+    <meta property="og:description" content="走訪24小時不停歇的彰化爌肉飯，展開途中風景與滋味。1+1+1 有料生活米袋、有料生意碗、有料特輯刊物一次呈上。" />
+    <meta property="og:image" content="https://changhuawith.me/kbp/img/002.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="彰化有料特輯《爌肉之城》的身世之謎？" />
+    <meta name="twitter:description" content="白色方塊工作室 × 旅庫彰化 × 彰化旅行+ 共同呈獻，解開一碗爌肉飯招喚靈魂的身世之謎。" />
+    <meta name="twitter:image" content="https://changhuawith.me/kbp/img/002.jpg" />
+
+    <!-- Google Fonts: Noto Serif TC (思源宋體), Noto Sans TC, Cormorant Garamond -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400&family=Noto+Sans+TC:wght@300;400;500;700&family=Noto+Serif+TC:wght@400;500;600;700;900&display=swap" rel="stylesheet">
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              paper: {
+                50: '#FDFBF7',
+                100: '#FAF7F0',
+                200: '#F2ECE1',
+                300: '#E6DDD0',
+              },
+              ink: {
+                950: '#151311',
+                900: '#1F1C18',
+                800: '#2E2A24',
+                700: '#433D35',
+                600: '#5F584E',
+                400: '#8A8275',
+              },
+              braised: {
+                700: '#7A2C0D',
+                600: '#9A3412', // Rich amber braised soy sauce tone
+                500: '#B45309', // Warm stew gold
+                100: '#FEEBD8',
+                50: '#FFF7ED',
+              },
+              ochre: {
+                DEFAULT: '#C27838',
+                light: '#E29B59',
+                dark: '#8C4F1A',
+              }
+            },
+            fontFamily: {
+              serif: ['"Noto Serif TC"', 'Georgia', 'serif'],
+              sans: ['"Noto Sans TC"', '-apple-system', 'sans-serif'],
+              display: ['"Cormorant Garamond"', '"Noto Serif TC"', 'serif'],
+            }
+          }
+        }
+      }
+    </script>
+
+    <style>
+      /* 文青雜誌印刷感樣式 */
+      body {
+        background-color: #FAF7F0;
+        color: #1F1C18;
+        font-family: 'Noto Serif TC', serif;
+        background-image: radial-gradient(#E8E0D2 0.75px, transparent 0.75px);
+        background-size: 24px 24px;
+      }
+      
+      .vertical-writing {
+        writing-mode: vertical-rl;
+        text-orientation: upright;
+        letter-spacing: 0.18em;
+      }
+
+      .drop-cap::first-letter {
+        float: left;
+        font-size: 3.5rem;
+        line-height: 0.85;
+        font-weight: 900;
+        margin-right: 0.6rem;
+        margin-top: 0.2rem;
+        color: #9A3412;
+        font-family: 'Noto Serif TC', serif;
+      }
+
+      /* 平滑捲動閱讀進度條 */
+      #scroll-progress {
+        transform-origin: 0% 50%;
+      }
+
+      /* 燙金細線邊框與紙質質感 */
+      .hairline-border {
+        border-color: rgba(67, 61, 53, 0.12);
+      }
+
+      .stamp-badge {
+        position: relative;
+        display: inline-block;
+        padding: 0.25rem 0.6rem;
+        border: 1.5px solid #9A3412;
+        color: #9A3412;
+        font-weight: 700;
+        letter-spacing: 0.1em;
+      }
+      .stamp-badge::after {
+        content: '';
+        position: absolute;
+        inset: 2px;
+        border: 0.5px dashed rgba(154, 52, 18, 0.4);
+        pointer-events: none;
+      }
+
+      /* 圖片載入過渡效果 */
+      img {
+        transition: opacity 0.3s ease;
+      }
+    </style>
+  </head>
+  <body class="selection:bg-braised-100 selection:text-braised-700 antialiased">
+    
+    <!-- 頂端滾動進度條 -->
+    <div id="scroll-progress-container" class="fixed top-0 left-0 right-0 h-1 bg-stone-200/50 z-50">
+      <div id="scroll-progress" class="h-full bg-braised-600 w-0 transition-all duration-75"></div>
+    </div>
+
+    <!-- 頂端導航列 (Top Bar Contract: 3-zone layout) -->
+    <header class="sticky top-0 z-40 bg-paper-100/90 backdrop-blur-md border-b hairline-border transition-all duration-200">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 h-16 flex items-center justify-between gap-8">
+        
+        <!-- Zone 1: Brand Wordmark -->
+        <a href="#hero" class="flex items-center gap-2 group whitespace-nowrap shrink-0">
+          <span class="w-2.5 h-2.5 rounded-full bg-braised-600 group-hover:scale-125 transition-transform"></span>
+          <span class="text-xl sm:text-2xl font-black font-serif tracking-tight text-ink-950">
+            彰化有料<span class="text-braised-600 font-normal ml-1 text-base">特輯</span>
+          </span>
+        </a>
+
+        <!-- Zone 2: Navigation Links -->
+        <nav class="hidden md:flex items-center gap-7 text-sm font-medium text-ink-700">
+          <a href="#mystery" class="hover:text-braised-600 transition-colors whitespace-nowrap">身世之謎</a>
+          <a href="#story" class="hover:text-braised-600 transition-colors whitespace-nowrap">走訪紀行</a>
+          <a href="#clock" class="hover:text-braised-600 transition-colors whitespace-nowrap">24H食境地圖</a>
+          <a href="#combo" class="hover:text-braised-600 transition-colors whitespace-nowrap">1+1+1出擊</a>
+          <a href="#team" class="hover:text-braised-600 transition-colors whitespace-nowrap">共創團隊</a>
+        </nav>
+
+        <!-- Zone 3: Primary Action -->
+        <div class="flex items-center gap-3 shrink-0">
+          <a href="#preorder" class="inline-flex items-center justify-center px-4 py-2 text-xs sm:text-sm font-semibold text-white bg-ink-950 hover:bg-braised-600 rounded-none border border-ink-950 hover:border-braised-600 transition-all shadow-sm tracking-wider whitespace-nowrap">
+            立即預購特輯
+          </a>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- HERO SECTION: 雜誌大封面與主視覺 -->
+      <section id="hero" class="relative pt-8 pb-16 md:pt-14 md:pb-24 overflow-hidden border-b hairline-border">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          
+          <!-- 刊物出刊標記 (Editorial Issue Header) -->
+          <div class="flex flex-col sm:flex-row sm:items-center justify-between pb-6 mb-8 border-b hairline-border text-xs text-ink-600 tracking-widest uppercase gap-2">
+            <div class="flex items-center gap-2">
+              <span class="font-bold text-braised-600">CHANGHUA WITH ME</span>
+              <span>·</span>
+              <span>ISSUE NO. 02 特刊號</span>
+              <span>·</span>
+              <span>2026 發行限定</span>
+            </div>
+            <div class="text-ink-400 font-sans">
+              白色方塊工作室 · 旅庫彰化 · 彰化旅行+ 共同出品
+            </div>
+          </div>
+
+          <!-- 主標題與引言 (Grid with Visual) -->
+          <div class="grid grid-cols-1 lg:grid-cols-12 gap-10 items-stretch">
+            
+            <!-- 左欄：主標題與文案導引 (7 cols) -->
+            <div class="lg:col-span-7 flex flex-col justify-between space-y-6">
+              <div>
+                <div class="inline-flex items-center gap-2 text-xs font-semibold text-braised-600 tracking-widest mb-3">
+                  <span class="w-6 h-px bg-braised-600"></span>
+                  <span>彰化飲食文化深度專號</span>
+                </div>
+                
+                <h1 class="text-3xl sm:text-4xl lg:text-5xl font-black font-serif text-ink-950 tracking-tight leading-[1.25] text-balance mb-6">
+                  彰化有料特輯<br />
+                  <span class="text-braised-600">《爌肉之城》</span>的身世之謎？
+                </h1>
+
+                <p class="text-base sm:text-lg text-ink-700 leading-relaxed font-serif max-w-xl text-balance">
+                  走訪的過程，我們始終知道那碗從清晨至夜晚 24 小時不停歇、隨時可吃、隨處可吃的彰化爌肉飯，似乎召喚著我們：再靠近一點，再好好看看他、好好品嘗他。
+                </p>
+              </div>
+
+              <!-- 雜誌特色三行精華摘要 -->
+              <div class="p-6 bg-paper-200/70 border hairline-border space-y-3">
+                <div class="flex items-start gap-3">
+                  <span class="text-braised-600 font-bold font-serif text-sm">01</span>
+                  <p class="text-xs sm:text-sm text-ink-800 leading-relaxed">
+                    <strong>從《彰化有料100》開啟的大門</strong>：走過百人小旅行、餐桌與巡迴列車，一次次深焙在地精神。
+                  </p>
+                </div>
+                <div class="flex items-start gap-3">
+                  <span class="text-braised-600 font-bold font-serif text-sm">02</span>
+                  <p class="text-xs sm:text-sm text-ink-800 leading-relaxed">
+                    <strong>24小時不歇息的街巷滋味</strong>：那一條竹籤穿起的老滋味，串聯清晨到深夜的城市作息。
+                  </p>
+                </div>
+                <div class="flex items-start gap-3">
+                  <span class="text-braised-600 font-bold font-serif text-sm">03</span>
+                  <p class="text-xs sm:text-sm text-ink-800 leading-relaxed">
+                    <strong>1+1+1 重磅出擊</strong>：有料生活米袋 ＋ 有料生意碗 ＋ 有料特輯刊物，一次典藏呈上。
+                  </p>
+                </div>
+              </div>
+
+              <!-- 預購按鈕與發行規格 -->
+              <div class="pt-2 flex flex-wrap items-center gap-4">
+                <a href="#preorder" class="px-7 py-3.5 bg-braised-600 hover:bg-braised-700 text-white font-serif font-bold text-sm tracking-wider transition-all shadow-md hover:shadow-lg inline-flex items-center gap-2">
+                  <span>搶先支持 1+1+1 典藏計畫</span>
+                  <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3"/></svg>
+                </a>
+                <a href="#clock" class="px-5 py-3.5 border hairline-border bg-white/60 hover:bg-white text-ink-800 text-sm font-medium transition-colors inline-flex items-center gap-2">
+                  <svg class="w-4 h-4 text-braised-600" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+                  <span>探索 24H 爌肉輪盤</span>
+                </a>
+              </div>
+            </div>
+
+            <!-- 右欄：主視覺圖片 (5 cols) -->
+            <div class="lg:col-span-5 flex flex-col">
+              <div class="relative group cursor-pointer overflow-hidden border-2 border-stone-800 shadow-xl bg-stone-900" onclick="openLightbox('https://changhuawith.me/kbp/img/002.jpg', '彰化有料特輯《爌肉之城》主視覺')">
+                
+                <!-- 主視覺圖片 -->
+                <img 
+                  id="main-hero-img"
+                  src="https://changhuawith.me/kbp/img/002.jpg" 
+                  alt="彰化有料特輯《爌肉之城》主視覺" 
+                  referrerpolicy="no-referrer"
+                  class="w-full h-full object-cover min-h-[380px] lg:min-h-[460px] group-hover:scale-105 transition-transform duration-700"
+                  onerror="this.onerror=null; this.parentElement.classList.add('p-8'); this.parentElement.innerHTML='<div class=\'text-center text-paper-100 flex flex-col items-center justify-center h-full min-h-[340px]\'><span class=\'text-3xl font-serif font-bold text-braised-500 mb-2\'>彰化有料特輯</span><span class=\'text-xl font-serif\'>《爌肉之城》</span><p class=\'text-xs text-stone-400 mt-4\'>影像加載中，點擊可重新整理</p></div>';"
+                />
+
+                <!-- 覆蓋層與點擊提示 -->
+                <div class="absolute inset-0 bg-gradient-to-t from-black/75 via-transparent to-transparent opacity-80 group-hover:opacity-60 transition-opacity"></div>
+                
+                <div class="absolute bottom-4 left-4 right-4 flex items-center justify-between text-white text-xs">
+                  <div class="font-serif tracking-wider">
+                    <span class="text-braised-500 font-bold mr-1">FIG. 01</span>
+                    特輯主視覺・爌肉身世開展
+                  </div>
+                  <div class="inline-flex items-center gap-1 bg-black/40 px-2 py-1 backdrop-blur-sm border border-white/20 text-[11px]">
+                    <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0zM10 7v3m0 0v3m0-3h3m-3 0H7"/></svg>
+                    <span>點擊放大細看</span>
+                  </div>
+                </div>
+
+                <!-- 浮動戳印 (Cultural stamp) -->
+                <div class="absolute top-4 right-4 bg-paper-100/95 text-braised-700 px-3 py-1.5 border border-braised-600/40 shadow-sm text-xs font-serif font-bold tracking-widest rotate-3 pointer-events-none">
+                  限量特輯發行
+                </div>
+              </div>
+
+              <!-- 圖片註解 -->
+              <p class="text-xs text-ink-600 italic font-serif mt-2.5 text-right">
+                攝影記錄 · 那碗招喚靈魂的琥珀色街巷記憶
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 2: 身世之謎與核心文案 (The Editorial Narrative) -->
+      <section id="mystery" class="py-16 md:py-24 border-b hairline-border bg-white">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          
+          <!-- 章節標頭 -->
+          <div class="text-center mb-14">
+            <span class="text-xs uppercase tracking-widest text-braised-600 font-bold">CHAPTER 01 · 核心紀事</span>
+            <h2 class="text-2xl sm:text-3xl md:text-4xl font-serif font-bold text-ink-950 mt-2 tracking-tight">
+              走訪街巷，探問那一碗爌肉的魔幻身世
+            </h2>
+            <div class="w-12 h-0.5 bg-braised-600 mx-auto mt-4"></div>
+          </div>
+
+          <!-- 文藝長文閱讀排版 (Double Column with Pull Quote & Drop Cap) -->
+          <div class="relative">
+            
+            <!-- 桌面端文青豎排點綴 -->
+            <div class="hidden xl:block absolute -left-20 top-4 vertical-writing text-ink-400 text-xs font-serif border-l hairline-border pl-3 tracking-widest h-64">
+              清晨至深夜 · 二十四小時不停歇的香氣
+            </div>
+
+            <!-- 第一段：開啟大門 -->
+            <div class="space-y-6 text-ink-800 font-serif leading-loose text-base sm:text-lg">
+              <p class="drop-cap">
+                從2025年魔幻出擊的《彰化有料100》出版行動，至今即將發行的彰化有料特輯，彷彿被彰化有料100開啟了一扇門，這扇門開啟團隊走過「有料百人小旅行」、「有料餐桌」、「有料巡迴列車」、「有料新書分享會」......等，每一站都讓團隊的每個人一次一次的品嘗彰化有料、述說彰化有料的精神。
+              </p>
+              
+              <!-- 沉浸式引言條 (Pull Quote) -->
+              <blockquote class="my-10 py-6 px-8 bg-paper-100 border-y border-stone-300 text-ink-900 font-serif text-lg sm:text-xl italic text-center leading-relaxed">
+                「走訪的過程，我們始終知道那碗從清晨至夜晚24小時不停歇，隨時可吃、隨處可吃的彰化爌肉飯，似乎他招喚著我們，再靠近一點，再好好看看他、好好品嘗他。」
+              </blockquote>
+
+              <!-- 第二段：原班人馬與風景滋味 -->
+              <p>
+                因此原班人馬<strong>「白色方塊工作室、旅庫彰化、彰化旅行+」</strong>，並偕同各方的專業夥伴，雖然不至於上高山下油鍋，但當展開這份彰化爌肉飯，途中所遇見的風景、滋味，真的只有有料特輯能裝載下這一切。
+              </p>
+
+              <p class="text-braised-700 font-medium">
+                此次出擊包含 <strong>1+1+1</strong>：有料生活米袋、有料生意碗、有料特輯刊物，一次呈上。期待你帶著這份特輯，再次走訪《爌肉之城》。
+              </p>
+            </div>
+
+            <!-- 歷程時間軸 (Journey Milestones from 2025 to 2026) -->
+            <div class="mt-14 pt-10 border-t hairline-border grid grid-cols-2 md:grid-cols-4 gap-6 text-center">
+              <div class="p-4 bg-paper-50 border hairline-border">
+                <span class="text-xs text-stone-500 font-sans">2025 春季</span>
+                <h4 class="font-bold text-ink-950 mt-1">彰化有料100</h4>
+                <p class="text-xs text-ink-600 mt-1">魔幻出版行動啟程</p>
+              </div>
+              <div class="p-4 bg-paper-50 border hairline-border">
+                <span class="text-xs text-stone-500 font-sans">走訪里程</span>
+                <h4 class="font-bold text-ink-950 mt-1">百人小旅行</h4>
+                <p class="text-xs text-ink-600 mt-1">有料餐桌與巡迴列車</p>
+              </div>
+              <div class="p-4 bg-paper-50 border hairline-border">
+                <span class="text-xs text-stone-500 font-sans">深化共創</span>
+                <h4 class="font-bold text-ink-950 mt-1">新書分享會</h4>
+                <p class="text-xs text-ink-600 mt-1">跨界共鳴與在地對話</p>
+              </div>
+              <div class="p-4 bg-braised-50 border border-braised-600/30">
+                <span class="text-xs text-braised-700 font-sans font-bold">2026 現正發行</span>
+                <h4 class="font-bold text-braised-700 mt-1">《爌肉之城》特輯</h4>
+                <p class="text-xs text-braised-600 mt-1">1+1+1 終極身世解答</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- SECTION 3: 24小時爌肉飯探索時鐘 (The 24H Living Clock Experience) -->
+      <section id="clock" class="py-16 md:py-24 border-b hairline-border bg-paper-100">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          
+          <div class="max-w-2xl mx-auto text-center mb-12">
+            <span class="text-xs uppercase tracking-widest text-braised-600 font-bold">彰化全天候的魔幻滋味</span>
+            <h2 class="text-2xl sm:text-3xl font-serif font-bold text-ink-950 mt-2">
+              「24小時不歇息」的彰化爌肉時鐘
+            </h2>
+            <p class="text-sm sm:text-base text-ink-700 font-serif mt-3">
+              在彰化，吃爌肉飯不是特定餐點，而是一套嚴密的城市生活作息。點擊時段，跟隨特輯腳步看見各時辰的招牌身手：
+            </p>
+          </div>
+
+          <!-- 時鐘切換按鈕群組 (Interactive Segmented Control) -->
+          <div class="flex flex-wrap items-center justify-center gap-2 mb-10" id="time-tabs">
+            <button onclick="switchTimeSlot('dawn')" id="tab-dawn" class="time-tab-btn active px-4 py-2 text-xs sm:text-sm font-serif font-semibold border border-ink-950 bg-ink-950 text-white transition-all shadow-sm">
+              🌅 清晨朝食 (06:00 - 11:00)
+            </button>
+            <button onclick="switchTimeSlot('noon')" id="tab-noon" class="time-tab-btn px-4 py-2 text-xs sm:text-sm font-serif font-semibold border hairline-border bg-white text-ink-800 hover:border-ink-950 transition-all">
+              ☀️ 午間續命 (11:00 - 14:00)
+            </button>
+            <button onclick="switchTimeSlot('dusk')" id="tab-dusk" class="time-tab-btn px-4 py-2 text-xs sm:text-sm font-serif font-semibold border hairline-border bg-white text-ink-800 hover:border-ink-950 transition-all">
+              🌆 黃昏撫慰 (16:30 - 20:30)
+            </button>
+            <button onclick="switchTimeSlot('midnight')" id="tab-midnight" class="time-tab-btn px-4 py-2 text-xs sm:text-sm font-serif font-semibold border hairline-border bg-white text-ink-800 hover:border-ink-950 transition-all">
+              🌙 深夜狂熱 (21:30 - 04:00)
+            </button>
+          </div>
+
+          <!-- 時鐘內容卡片 (Dynamic Container) -->
+          <div id="time-slot-display" class="bg-white border hairline-border p-6 sm:p-10 shadow-sm max-w-4xl mx-auto transition-all">
+            <!-- 內容由 JS 動態注入，預設顯示晨食 -->
+          </div>
+
+          <!-- 肉位學堂 (The Cut Guide in the Magazine) -->
+          <div class="mt-12 max-w-4xl mx-auto p-6 bg-paper-200/60 border hairline-border">
+            <div class="flex items-center gap-2 text-xs font-bold text-braised-600 uppercase tracking-wider mb-2">
+              <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+              <span>特輯老饕密碼：一根竹籤的力學</span>
+            </div>
+            <p class="text-xs sm:text-sm text-ink-800 font-serif leading-relaxed">
+              彰化爌肉飯最大的視覺與工藝記號，在於串連皮、脂、肉三者不散架的「手工細竹籤」。無論是皮滑軟糯的「腳庫」、瘦肉軟嫩如羽的「離緣肉（二層肉）」、或是肥瘦交織的「圈仔」，特輯刊物皆為您全景拆解！
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- SECTION 4: 1+1+1 重磅出擊 (The 1+1+1 Trilogy Combo Showcase) -->
+      <section id="combo" class="py-16 md:py-24 border-b hairline-border bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          
+          <div class="text-center max-w-3xl mx-auto mb-16">
+            <div class="stamp-badge mb-3">一次呈上 · 1+1+1 終極特輯</div>
+            <h2 class="text-3xl sm:text-4xl font-serif font-black text-ink-950 tracking-tight">
+              有料出擊：生活米袋 × 生意碗 × 特輯刊物
+            </h2>
+            <p class="text-base text-ink-700 font-serif mt-4 leading-relaxed">
+              這不只是一本書，而是一套能夠走進彰化常民生活的全感官裝備。原班人馬偕同在地老工藝匠人，歷時近一年打磨成型。
+            </p>
+          </div>
+
+          <!-- 3件套卡片排版 (3-Column Grid) -->
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            
+            <!-- Item 1: 特輯刊物 -->
+            <div class="border hairline-border bg-paper-50 p-6 flex flex-col justify-between group hover:border-braised-600 transition-colors">
+              <div>
+                <div class="flex items-center justify-between pb-4 border-b hairline-border mb-5">
+                  <span class="text-xs font-mono font-bold text-braised-600">ITEM 01 / 刊物</span>
+                  <span class="text-xs text-stone-500 font-serif">深度採訪專書</span>
+                </div>
+                <div class="aspect-[4/5] bg-paper-200 relative mb-5 overflow-hidden border hairline-border flex items-center justify-center p-6 text-center">
+                  <div class="space-y-2">
+                    <div class="text-xs text-braised-700 font-serif tracking-widest uppercase">彰化有料特輯</div>
+                    <div class="text-2xl font-serif font-black text-ink-950">《爌肉之城》</div>
+                    <div class="text-xs text-stone-600 font-serif italic pt-2">身世之謎與全城尋味地圖</div>
+                    <div class="pt-4">
+                      <span class="inline-block text-[11px] bg-white px-2.5 py-1 border hairline-border text-ink-800">高磅質樸美術紙 · 全彩印刷</span>
+                    </div>
+                  </div>
+                </div>
+                <h3 class="text-lg font-serif font-bold text-ink-950">《爌肉之城》有料特輯刊物</h3>
+                <p class="text-xs sm:text-sm text-ink-700 font-serif mt-2 leading-relaxed">
+                  揭露全彰化24小時店肆身世、豬肉部位考證、攤商老闆的人生哲學，隨書附贈私房老饕口袋點單地圖。
+                </p>
+              </div>
+              <div class="mt-6 pt-4 border-t hairline-border text-xs text-stone-600 flex justify-between items-center">
+                <span>規格：16K 開本 / 120 頁</span>
+                <span class="text-braised-700 font-bold font-mono">定價 NT$ 380</span>
+              </div>
+            </div>
+
+            <!-- Item 2: 生意碗 -->
+            <div class="border hairline-border bg-paper-50 p-6 flex flex-col justify-between group hover:border-braised-600 transition-colors">
+              <div>
+                <div class="flex items-center justify-between pb-4 border-b hairline-border mb-5">
+                  <span class="text-xs font-mono font-bold text-braised-600">ITEM 02 / 陶瓷</span>
+                  <span class="text-xs text-stone-500 font-serif">老攤手感重現</span>
+                </div>
+                <div class="aspect-[4/5] bg-paper-200 relative mb-5 overflow-hidden border hairline-border flex items-center justify-center p-6 text-center">
+                  <div class="space-y-3">
+                    <div class="w-24 h-24 mx-auto rounded-full border-4 border-stone-300 bg-white shadow-inner flex items-center justify-center">
+                      <div class="text-center">
+                        <span class="text-xs font-serif font-bold text-braised-700">有料</span>
+                        <div class="text-[9px] text-stone-400">CHANGHUA</div>
+                      </div>
+                    </div>
+                    <div class="text-lg font-serif font-bold text-ink-950">有料生意碗</div>
+                    <p class="text-xs text-stone-600">復刻老店厚胎厚口碗型</p>
+                    <span class="inline-block text-[11px] bg-white px-2.5 py-1 border hairline-border text-ink-800">高溫耐熱陶瓷 · 手感溫潤</span>
+                  </div>
+                </div>
+                <h3 class="text-lg font-serif font-bold text-ink-950">有料專屬生意碗</h3>
+                <p class="text-xs sm:text-sm text-ink-700 font-serif mt-2 leading-relaxed">
+                  彰化攤頭專用厚胎瓷碗，耐撞耐燙，捧在手中就是彰化小吃攤最真實的沉甸感，盛飯、裝湯、拌醬皆合宜。
+                </p>
+              </div>
+              <div class="mt-6 pt-4 border-t hairline-border text-xs text-stone-600 flex justify-between items-center">
+                <span>規格：口徑約 14cm / 陶瓷厚胎</span>
+                <span class="text-braised-700 font-bold font-mono">定價 NT$ 480</span>
+              </div>
+            </div>
+
+            <!-- Item 3: 有料生活米袋 -->
+            <div class="border hairline-border bg-paper-50 p-6 flex flex-col justify-between group hover:border-braised-600 transition-colors">
+              <div>
+                <div class="flex items-center justify-between pb-4 border-b hairline-border mb-5">
+                  <span class="text-xs font-mono font-bold text-braised-600">ITEM 03 / 布藝</span>
+                  <span class="text-xs text-stone-500 font-serif">日常生活隨行</span>
+                </div>
+                <div class="aspect-[4/5] bg-paper-200 relative mb-5 overflow-hidden border hairline-border flex items-center justify-center p-6 text-center">
+                  <div class="space-y-3">
+                    <div class="w-20 h-28 mx-auto bg-[#F5EEDB] border-2 border-stone-400 rounded-sm shadow-sm flex flex-col justify-between p-2">
+                      <div class="text-[9px] text-stone-500 font-mono">NO. 100</div>
+                      <div class="font-serif font-black text-braised-700 text-xs tracking-widest">有料米袋</div>
+                      <div class="w-full h-1 bg-braised-600/30"></div>
+                    </div>
+                    <div class="text-lg font-serif font-bold text-ink-950">有料生活米袋</div>
+                    <p class="text-xs text-stone-600">傳統糧袋結構造型 × 純棉帆布</p>
+                    <span class="inline-block text-[11px] bg-white px-2.5 py-1 border hairline-border text-ink-800">14oz 重磅未經漂染原胚布</span>
+                  </div>
+                </div>
+                <h3 class="text-lg font-serif font-bold text-ink-950">有料生活米袋</h3>
+                <p class="text-xs sm:text-sm text-ink-700 font-serif mt-2 leading-relaxed">
+                  靈感取自老米行車縫封口米袋，兼具外出托特提袋機能，裝入特輯書刊與生意碗，就是帶得走的彰化記憶。
+                </p>
+              </div>
+              <div class="mt-6 pt-4 border-t hairline-border text-xs text-stone-600 flex justify-between items-center">
+                <span>規格：約 32×26×8cm / 雙提把</span>
+                <span class="text-braised-700 font-bold font-mono">定價 NT$ 520</span>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- 1+1+1 整合套組優惠宣告條 -->
+          <div class="mt-12 p-6 sm:p-8 bg-paper-200 border-2 border-ink-950 flex flex-col md:flex-row items-center justify-between gap-6">
+            <div class="space-y-1 text-center md:text-left">
+              <span class="text-xs font-bold text-braised-600 tracking-widest uppercase">Special Curated Set</span>
+              <h4 class="text-xl sm:text-2xl font-serif font-black text-ink-950">
+                1+1+1 終極典藏套組（刊物＋生意碗＋米袋）
+              </h4>
+              <p class="text-xs sm:text-sm text-ink-700 font-serif">
+                原價總合 NT$ 1,380，預購期間享有專屬早鳥禮遇價，限量 500 組，售完為止。
+              </p>
+            </div>
+            <div class="flex items-center gap-4">
+              <div class="text-right">
+                <div class="text-xs text-stone-500 line-through">原價 NT$ 1,380</div>
+                <div class="text-2xl sm:text-3xl font-serif font-black text-braised-700">NT$ 1,080</div>
+              </div>
+              <a href="#preorder" class="px-6 py-3 bg-braised-600 hover:bg-braised-700 text-white font-serif font-bold text-sm tracking-wider transition-all">
+                預購典藏套組
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- SECTION 5: 預購方案與即時計算器 (Pre-order Actions & Simulator) -->
+      <section id="preorder" class="py-16 md:py-24 border-b hairline-border bg-paper-100">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+          
+          <div class="text-center max-w-2xl mx-auto mb-12">
+            <span class="text-xs uppercase tracking-widest text-braised-600 font-bold">PRE-ORDER & SUPPORT</span>
+            <h2 class="text-2xl sm:text-3xl font-serif font-bold text-ink-950 mt-2">
+              搶先預約：帶著特輯，再次走訪《爌肉之城》
+            </h2>
+            <p class="text-sm text-ink-700 font-serif mt-2">
+              請選擇您的預購支持方案，填寫配送資訊即完成登記，我們將於出版出貨前發送確認信。
+            </p>
+          </div>
+
+          <!-- 方案選擇卡片 -->
+          <div class="space-y-4 mb-8">
+            
+            <!-- 方案 A: 1+1+1 豪華典藏組 (推薦) -->
+            <label class="block p-5 sm:p-6 bg-white border-2 border-braised-600 cursor-pointer relative shadow-sm hover:shadow-md transition-shadow">
+              <div class="flex items-start justify-between gap-4">
+                <div class="flex items-start gap-3">
+                  <input type="radio" name="plan" value="bundle" checked class="mt-1.5 h-4 w-4 text-braised-600 focus:ring-braised-500" onchange="updatePreorderCalc()">
+                  <div>
+                    <div class="flex items-center gap-2">
+                      <span class="text-xs bg-braised-600 text-white px-2 py-0.5 font-bold font-serif">年度最受矚目</span>
+                      <h4 class="font-serif font-bold text-base sm:text-lg text-ink-950">1+1+1 終極有料典藏組</h4>
+                    </div>
+                    <p class="text-xs sm:text-sm text-ink-700 font-serif mt-1">
+                      包含：《爌肉之城》特輯刊物 + 有料生意碗 + 有料生活米袋 ＋ 專屬別冊明信片
+                    </p>
+                  </div>
+                </div>
+                <div class="text-right shrink-0">
+                  <span class="text-lg sm:text-xl font-serif font-bold text-braised-700">NT$ 1,080</span>
+                  <span class="block text-[11px] text-stone-500 line-through">原價 NT$ 1,380</span>
+                </div>
+              </div>
+            </label>
+
+            <!-- 方案 B: 單購特輯刊物 -->
+            <label class="block p-5 sm:p-6 bg-white border hairline-border hover:border-stone-800 cursor-pointer relative shadow-sm hover:shadow-md transition-shadow">
+              <div class="flex items-start justify-between gap-4">
+                <div class="flex items-start gap-3">
+                  <input type="radio" name="plan" value="book_only" class="mt-1.5 h-4 w-4 text-braised-600 focus:ring-braised-500" onchange="updatePreorderCalc()">
+                  <div>
+                    <h4 class="font-serif font-bold text-base sm:text-lg text-ink-950">《爌肉之城》單本有料特輯</h4>
+                    <p class="text-xs sm:text-sm text-ink-700 font-serif mt-1">
+                      包含：《爌肉之城》特輯專書一本 ＋ 全城 24H 尋味折頁地圖
+                    </p>
+                  </div>
+                </div>
+                <div class="text-right shrink-0">
+                  <span class="text-lg sm:text-xl font-serif font-bold text-ink-950">NT$ 380</span>
+                </div>
+              </div>
+            </label>
+
+            <!-- 方案 C: 雙人同享 / 兩套 1+1+1 套組 -->
+            <label class="block p-5 sm:p-6 bg-white border hairline-border hover:border-stone-800 cursor-pointer relative shadow-sm hover:shadow-md transition-shadow">
+              <div class="flex items-start justify-between gap-4">
+                <div class="flex items-start gap-3">
+                  <input type="radio" name="plan" value="double_bundle" class="mt-1.5 h-4 w-4 text-braised-600 focus:ring-braised-500" onchange="updatePreorderCalc()">
+                  <div>
+                    <div class="flex items-center gap-2">
+                      <span class="text-xs bg-stone-800 text-white px-2 py-0.5 font-bold font-serif">好友分享特惠</span>
+                      <h4 class="font-serif font-bold text-base sm:text-lg text-ink-950">雙人同享組（兩套 1+1+1）</h4>
+                    </div>
+                    <p class="text-xs sm:text-sm text-ink-700 font-serif mt-1">
+                      包含：刊物×2 + 生意碗×2 + 生活米袋×2，加贈團隊導覽小旅行折價券
+                    </p>
+                  </div>
+                </div>
+                <div class="text-right shrink-0">
+                  <span class="text-lg sm:text-xl font-serif font-bold text-braised-700">NT$ 2,050</span>
+                  <span class="block text-[11px] text-stone-500 line-through">原價 NT$ 2,760</span>
+                </div>
+              </div>
+            </label>
+
+          </div>
+
+          <!-- 數量與結算區塊 (Quantity & Calculator) -->
+          <div class="bg-white border hairline-border p-6 sm:p-8 mb-8">
+            <div class="flex flex-col sm:flex-row sm:items-center justify-between gap-4 pb-6 border-b hairline-border">
+              <div class="space-y-0.5">
+                <span class="font-serif font-bold text-ink-950 text-sm">購買套數</span>
+                <p class="text-xs text-stone-500">預購享有滿額免運優惠（滿 NT$ 1,500 即享免運）</p>
+              </div>
+              <div class="flex items-center border hairline-border self-start sm:self-auto bg-paper-50">
+                <button type="button" onclick="adjustQuantity(-1)" class="w-9 h-9 flex items-center justify-center hover:bg-stone-200 transition-colors text-ink-900 font-bold text-base">−</button>
+                <span id="quantity-display" class="w-12 text-center font-mono font-bold text-sm text-ink-950">1</span>
+                <button type="button" onclick="adjustQuantity(1)" class="w-9 h-9 flex items-center justify-center hover:bg-stone-200 transition-colors text-ink-900 font-bold text-base">＋</button>
+              </div>
+            </div>
+
+            <!-- 取貨方式 -->
+            <div class="pt-6 pb-6 border-b hairline-border space-y-3">
+              <span class="block font-serif font-bold text-ink-950 text-sm">取件方式</span>
+              <div class="grid grid-cols-1 sm:grid-cols-2 gap-3">
+                <label class="flex items-center gap-3 p-3 border hairline-border bg-paper-50 cursor-pointer">
+                  <input type="radio" name="delivery" value="pickup" checked class="text-braised-600 focus:ring-braised-500" onchange="updatePreorderCalc()">
+                  <div class="text-xs">
+                    <span class="font-bold text-ink-950 block">彰化市區自取 (白色方塊 / 旅庫彰化)</span>
+                    <span class="text-stone-500">免運費 · 現場取件加贈專屬明信片</span>
+                  </div>
+                </label>
+                <label class="flex items-center gap-3 p-3 border hairline-border bg-paper-50 cursor-pointer">
+                  <input type="radio" name="delivery" value="shipping" class="text-braised-600 focus:ring-braised-500" onchange="updatePreorderCalc()">
+                  <div class="text-xs">
+                    <span class="font-bold text-ink-950 block">宅配到府寄送</span>
+                    <span class="text-stone-500">本島運費 NT$ 80 (滿 NT$ 1,500 免運)</span>
+                  </div>
+                </label>
+              </div>
+            </div>
+
+            <!-- 總計明細 -->
+            <div class="pt-6 flex flex-col sm:flex-row sm:items-center justify-between gap-4">
+              <div>
+                <span class="text-xs text-stone-500 font-sans">預估總計金額</span>
+                <div class="flex items-baseline gap-2">
+                  <span id="total-amount-display" class="text-3xl font-serif font-black text-braised-700">NT$ 1,080</span>
+                  <span id="shipping-note" class="text-xs text-stone-500 font-serif">（彰化自取免運）</span>
+                </div>
+              </div>
+
+              <button onclick="openPreorderModal()" class="w-full sm:w-auto px-8 py-3.5 bg-ink-950 hover:bg-braised-600 text-white font-serif font-bold text-sm tracking-widest transition-all">
+                填寫預購訂單
+              </button>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- SECTION 6: 原班人馬共創陣容 (The Creators) -->
+      <section id="team" class="py-16 md:py-24 border-b hairline-border bg-white">
+        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+          
+          <div class="text-center max-w-2xl mx-auto mb-14">
+            <span class="text-xs uppercase tracking-widest text-braised-600 font-bold">THE COLLABORATORS</span>
+            <h2 class="text-2xl sm:text-3xl font-serif font-bold text-ink-950 mt-2">
+              原班人馬 · 再次集結出擊
+            </h2>
+            <p class="text-sm text-ink-700 font-serif mt-2">
+              「白色方塊工作室、旅庫彰化、彰化旅行+」攜手各方專業夥伴，用最挑剔的味蕾與最溫熱的文字，為彰化立傳。
+            </p>
+          </div>
+
+          <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+            
+            <div class="p-6 bg-paper-50 border hairline-border">
+              <div class="w-10 h-10 bg-ink-950 text-white flex items-center justify-center font-serif font-bold text-sm mb-4">
+                白
+              </div>
+              <h4 class="font-serif font-bold text-lg text-ink-950">白色方塊工作室</h4>
+              <p class="text-xs text-braised-600 font-mono mt-1">White Cube Studio</p>
+              <p class="text-xs sm:text-sm text-ink-700 font-serif mt-3 leading-relaxed">
+                長期深耕彰化視覺美學與在地展覽策劃，將傳統飲食文化轉譯為具國際質感的當代出版物與生活物件。
+              </p>
+            </div>
+
+            <div class="p-6 bg-paper-50 border hairline-border">
+              <div class="w-10 h-10 bg-braised-600 text-white flex items-center justify-center font-serif font-bold text-sm mb-4">
+                旅
+              </div>
+              <h4 class="font-serif font-bold text-lg text-ink-950">旅庫彰化</h4>
+              <p class="text-xs text-braised-600 font-mono mt-1">Lukang & Changhua Culture</p>
+              <p class="text-xs sm:text-sm text-ink-700 font-serif mt-3 leading-relaxed">
+                穿梭街巷最深處的文化田野行者，累積無數場走讀與深度導覽，精準掌握每一家老攤的起源與脈絡。
+              </p>
+            </div>
+
+            <div class="p-6 bg-paper-50 border hairline-border">
+              <div class="w-10 h-10 bg-stone-700 text-white flex items-center justify-center font-serif font-bold text-sm mb-4">
+                +
+              </div>
+              <h4 class="font-serif font-bold text-lg text-ink-950">彰化旅行+</h4>
+              <p class="text-xs text-braised-600 font-mono mt-1">Changhua Travel Plus</p>
+              <p class="text-xs sm:text-sm text-ink-700 font-serif mt-3 leading-relaxed">
+                串連在地社群與旅人靈魂的探索平台，打破傳統觀光框架，讓每一位造訪彰化的人都能體驗「有料生活」。
+              </p>
+            </div>
+
+          </div>
+
+          <!-- 感謝名單與夥伴協力 -->
+          <div class="mt-12 text-center p-6 bg-paper-100 border hairline-border">
+            <span class="text-xs text-stone-500 font-mono block mb-1">PARTNERS & SUPPORTERS</span>
+            <p class="text-xs sm:text-sm text-ink-800 font-serif">
+              特別感謝：全彰化市歷代爌肉攤肆老頭家、百人小旅行同行學員、在地陶藝工坊與全體有料支持者。
+            </p>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- SECTION 7: 常見問答 (FAQ Accordion) -->
+      <section class="py-16 md:py-20 border-b hairline-border bg-paper-50">
+        <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+          
+          <div class="text-center mb-12">
+            <span class="text-xs uppercase tracking-widest text-braised-600 font-bold">FREQUENTLY ASKED QUESTIONS</span>
+            <h2 class="text-2xl font-serif font-bold text-ink-950 mt-1">讀者常見問題</h2>
+          </div>
+
+          <div class="space-y-3" id="faq-list">
+            
+            <div class="border hairline-border bg-white">
+              <button onclick="toggleFaq(1)" class="w-full p-5 text-left font-serif font-bold text-sm sm:text-base text-ink-950 flex justify-between items-center">
+                <span>Q1. 預購何時截止？何時開始出貨寄送？</span>
+                <span id="faq-icon-1" class="text-stone-400 font-mono text-lg transition-transform">+</span>
+              </button>
+              <div id="faq-ans-1" class="hidden px-5 pb-5 text-xs sm:text-sm text-ink-700 font-serif leading-relaxed border-t hairline-border pt-4">
+                本次《爌肉之城》有料特輯預購預計進行至本季末，刊物與 1+1+1 實體商品目前已進入最終打樣印製階段，預計於次月起依照訂單順序分批出貨或通知實體門市取件。
+              </div>
+            </div>
+
+            <div class="border hairline-border bg-white">
+              <button onclick="toggleFaq(2)" class="w-full p-5 text-left font-serif font-bold text-sm sm:text-base text-ink-950 flex justify-between items-center">
+                <span>Q2. 實體自取地點在哪裡？需要攜帶什麼憑證？</span>
+                <span id="faq-icon-2" class="text-stone-400 font-mono text-lg transition-transform">+</span>
+              </button>
+              <div id="faq-ans-2" class="hidden px-5 pb-5 text-xs sm:text-sm text-ink-700 font-serif leading-relaxed border-t hairline-border pt-4">
+                自取地點為彰化市區「白色方塊工作室」與「旅庫彰化」據點。到貨時我們將發送簡訊與 Email 取件通知函，憑預約姓名與手機末三碼即可於營業時間內現場領取。
+              </div>
+            </div>
+
+            <div class="border hairline-border bg-white">
+              <button onclick="toggleFaq(3)" class="w-full p-5 text-left font-serif font-bold text-sm sm:text-base text-ink-950 flex justify-between items-center">
+                <span>Q3. 「有料生意碗」可以直接盛裝熱湯或進微波爐嗎？</span>
+                <span id="faq-icon-3" class="text-stone-400 font-mono text-lg transition-transform">+</span>
+              </button>
+              <div id="faq-ans-3" class="hidden px-5 pb-5 text-xs sm:text-sm text-ink-700 font-serif leading-relaxed border-t hairline-border pt-4">
+                是的！有料生意碗是由專業陶藝工坊經 1240°C 高溫燒製的耐用陶瓷碗，無毒無鉛釉藥，可耐熱盛裝熱湯，亦可安全使用於家用微波爐與洗碗機。
+              </div>
+            </div>
+
+            <div class="border hairline-border bg-white">
+              <button onclick="toggleFaq(4)" class="w-full p-5 text-left font-serif font-bold text-sm sm:text-base text-ink-950 flex justify-between items-center">
+                <span>Q4. 企業或團體大量採購是否有合作專案？</span>
+                <span id="faq-icon-4" class="text-stone-400 font-mono text-lg transition-transform">+</span>
+              </button>
+              <div id="faq-ans-4" class="hidden px-5 pb-5 text-xs sm:text-sm text-ink-700 font-serif leading-relaxed border-t hairline-border pt-4">
+                若需 20 套以上團購、企業伴手禮客製或搭配百人走讀小旅行規劃，歡迎直接來信聯繫團隊專屬信箱：hello@changhuawith.me，將有專人與您對接客製化方案。
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+    </main>
+
+    <!-- 頁尾 (Footer: Cultural and editorial minimal) -->
+    <footer class="bg-ink-950 text-paper-200 py-14">
+      <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
+        
+        <div class="grid grid-cols-1 md:grid-cols-12 gap-8 pb-10 border-b border-stone-800">
+          
+          <!-- 左側品牌介紹 (6 cols) -->
+          <div class="md:col-span-6 space-y-3">
+            <div class="text-xl font-serif font-black tracking-tight text-white">
+              彰化有料特輯《爌肉之城》
+            </div>
+            <p class="text-xs sm:text-sm text-stone-400 font-serif max-w-md leading-relaxed">
+              從2025年《彰化有料100》走向即將發行的特輯，我們以一碗爌肉飯為匙，舀起一整座老城的歷史、溫度與常民尊嚴。
+            </p>
+            <div class="text-xs text-braised-500 font-serif pt-1">
+              白色方塊工作室 · 旅庫彰化 · 彰化旅行+ 共同策劃
+            </div>
+          </div>
+
+          <!-- 右側快速連結與分享 (6 cols) -->
+          <div class="md:col-span-6 flex flex-col md:items-end justify-between space-y-4">
+            <div class="flex flex-wrap gap-6 text-xs text-stone-400 font-serif">
+              <a href="#hero" class="hover:text-white transition-colors">回到頁首</a>
+              <a href="#mystery" class="hover:text-white transition-colors">身世之謎</a>
+              <a href="#clock" class="hover:text-white transition-colors">24H 爌肉時鐘</a>
+              <a href="#combo" class="hover:text-white transition-colors">1+1+1 典藏套組</a>
+              <a href="#preorder" class="hover:text-white transition-colors">預購登記</a>
+            </div>
+
+            <!-- 社群分享按鈕 -->
+            <div class="flex items-center gap-3">
+              <button onclick="copyPageLink()" class="px-3 py-1.5 bg-stone-900 hover:bg-stone-800 text-stone-300 text-xs border border-stone-800 flex items-center gap-1.5 transition-colors">
+                <svg class="w-3.5 h-3.5" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 16H6a2 2 0 01-2-2V6a2 2 0 012-2h8a2 2 0 012 2v2m-6 12h8a2 2 0 002-2v-8a2 2 0 00-2-2h-8a2 2 0 00-2 2v8a2 2 0 002 2z"/></svg>
+                <span id="copy-text">複製本頁連結</span>
+              </button>
+              <a href="https://social-plugins.line.me/lineit/share?url=https://changhuawith.me/kbp/img/002.jpg" target="_blank" rel="noopener noreferrer" class="px-3 py-1.5 bg-[#06C755] text-white text-xs font-bold hover:opacity-90 transition-opacity">
+                LINE 分享
+              </a>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="pt-8 flex flex-col sm:flex-row items-center justify-between text-[11px] text-stone-500 font-sans gap-2">
+          <div>
+            © 2026 彰化有料 CHANGHUA WITH ME. 版權所有，轉載請註明出處。
+          </div>
+          <div>
+            攝影圖片版權歸團隊所有 · 官網推廣專用
+          </div>
+        </div>
+
+      </div>
+    </footer>
+
+    <!-- 圖片燈箱 Modal (Lightbox) -->
+    <div id="image-lightbox" class="fixed inset-0 z-50 bg-black/90 hidden items-center justify-center p-4 backdrop-blur-sm" onclick="closeLightbox(event)">
+      <div class="relative max-w-4xl max-h-[90vh] flex flex-col items-center">
+        <button onclick="closeLightbox(event)" class="absolute -top-10 right-0 text-white/80 hover:text-white text-sm font-mono flex items-center gap-1 bg-black/50 px-3 py-1 border border-white/20">
+          <span>✕ 關閉視窗 [ESC]</span>
+        </button>
+        <img id="lightbox-img" src="" alt="放大預覽" class="max-w-full max-h-[80vh] object-contain border border-stone-800 shadow-2xl" />
+        <p id="lightbox-caption" class="text-xs text-stone-300 font-serif mt-3 text-center"></p>
+      </div>
+    </div>
+
+    <!-- 預購訂單彈跳視窗 (Preorder Modal) -->
+    <div id="preorder-modal" class="fixed inset-0 z-50 bg-black/70 hidden items-center justify-center p-4 backdrop-blur-sm">
+      <div class="bg-paper-100 border-2 border-ink-950 w-full max-w-lg p-6 sm:p-8 shadow-2xl relative max-h-[90vh] overflow-y-auto">
+        <button onclick="closePreorderModal()" class="absolute top-4 right-4 text-stone-500 hover:text-ink-950 text-xl font-bold">
+          ✕
+        </button>
+
+        <div class="mb-6 pb-4 border-b hairline-border">
+          <span class="text-xs font-bold text-braised-600 uppercase">PRE-ORDER REGISTRATION</span>
+          <h3 class="text-xl font-serif font-black text-ink-950 mt-1">確認預購資料</h3>
+          <p class="text-xs text-stone-600 font-serif mt-1">
+            已選方案：<strong id="modal-plan-name" class="text-ink-950">1+1+1 終極有料典藏組</strong> (<span id="modal-qty">1</span>套) · 總計 <strong id="modal-total" class="text-braised-700">NT$ 1,080</strong>
+          </p>
+        </div>
+
+        <form id="order-form" onsubmit="submitPreorder(event)" class="space-y-4 font-serif">
+          <div>
+            <label class="block text-xs font-bold text-ink-900 mb-1">訂購人姓名 *</label>
+            <input type="text" id="cust-name" required placeholder="例如：王小明" class="w-full px-3 py-2 text-sm bg-white border hairline-border focus:outline-none focus:border-braised-600" />
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold text-ink-900 mb-1">聯絡電話 (手機) *</label>
+            <input type="tel" id="cust-phone" required placeholder="例如：0912-345-678" class="w-full px-3 py-2 text-sm bg-white border hairline-border focus:outline-none focus:border-braised-600" />
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold text-ink-900 mb-1">電子信箱 (接收出貨通知) *</label>
+            <input type="email" id="cust-email" required placeholder="例如：reader@example.com" class="w-full px-3 py-2 text-sm bg-white border hairline-border focus:outline-none focus:border-braised-600" />
+          </div>
+
+          <div id="address-field" class="hidden">
+            <label class="block text-xs font-bold text-ink-900 mb-1">宅配收件地址 *</label>
+            <input type="text" id="cust-address" placeholder="郵遞區號與詳細收件地址" class="w-full px-3 py-2 text-sm bg-white border hairline-border focus:outline-none focus:border-braised-600" />
+          </div>
+
+          <div>
+            <label class="block text-xs font-bold text-ink-900 mb-1">備註需求 (選填)</label>
+            <textarea id="cust-note" rows="2" placeholder="如有特殊寄送需求或給製作團隊的悄悄話..." class="w-full px-3 py-2 text-sm bg-white border hairline-border focus:outline-none focus:border-braised-600"></textarea>
+          </div>
+
+          <div class="pt-4 border-t hairline-border">
+            <button type="submit" class="w-full py-3.5 bg-braised-600 hover:bg-braised-700 text-white font-serif font-bold text-sm tracking-widest transition-colors shadow">
+              送出預購登記
+            </button>
+            <p class="text-[11px] text-stone-500 text-center mt-2">
+              送出後我們將保留您的預購名額，正式出刊後發送專屬付款與寄送聯絡通知。
+            </p>
+          </div>
+        </form>
+
+        <!-- 成功回饋畫面 -->
+        <div id="order-success" class="hidden py-8 text-center space-y-4">
+          <div class="w-16 h-16 bg-braised-100 text-braised-700 rounded-full flex items-center justify-center mx-auto text-2xl font-serif">
+            ✓
+          </div>
+          <h4 class="text-xl font-serif font-bold text-ink-950">感謝支持《爌肉之城》！</h4>
+          <p class="text-xs sm:text-sm text-ink-700 font-serif max-w-xs mx-auto leading-relaxed">
+            我們已收到您的預購登記。確認信將寄送至您的信箱，期待與您一同走訪這座城市的迷人身世。
+          </p>
+          <button onclick="closePreorderModal()" class="px-6 py-2 bg-ink-950 text-white text-xs font-serif font-bold">
+            完成
+          </button>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- JAVASCRIPT: 互動邏輯 -->
+    <script>
+      // 1. 24小時爌肉時鐘資料集
+      const timeSlotsData = {
+        dawn: {
+          title: "清晨朝食 · 老彰化人的晨光充電",
+          time: "06:00 - 11:00",
+          stall: "阿泉爌肉飯 / 成功路傳統老鋪",
+          feature: "皮Q肉嫩 · 骨仔肉湯",
+          quote: "天光微亮，攤頭白煙裊裊，早起務農與勞動者的第一餐，就是一碗琥珀微甘的肉香，配上熱滾滾的蝦丸湯。",
+          cutRecommendation: "推薦部位：二層肉（離緣肉）——油脂輕盈，瘦肉細緻不柴，最適清晨喚醒脾胃。",
+          badge: "早起限定"
+        },
+        noon: {
+          title: "午間正餐 · 飽滿黃金腳庫與酸菜",
+          time: "11:00 - 14:00",
+          stall: "魚市爌肉飯 / 華山路名肆",
+          feature: "黃金皮脂 · 濃郁老滷",
+          quote: "中午時分，排隊人潮擠滿騎樓。一塊肥瘦相間的圓厚肉塊鋪在米飯上，醬汁浸透每粒米飯，配上特製爽脆酸菜解膩。",
+          cutRecommendation: "推薦部位：腳庫（蹄膀肉）——皮厚膠質豐富，筷子一夾幾乎化開，正午能量滿載！",
+          badge: "正午人氣王"
+        },
+        dusk: {
+          title: "黃昏暖胃 · 下班與放課後的街角撫慰",
+          time: "16:30 - 20:30",
+          stall: "阿章爌肉飯 / 筒仔米糕老店",
+          feature: "當歸香氣 · 溫潤厚切",
+          quote: "夕陽西下，縣府旁與火車站周邊的攤肆亮起燈泡。下班回家的彰化人，熟練地跟老闆喊著：『一碗離緣、一碗苦瓜排骨！』",
+          cutRecommendation: "推薦部位：三層肉——肥瘦相間的完美層次，外皮微焦香，肉香與當歸湯底相映成趣。",
+          badge: "溫潤撫慰"
+        },
+        midnight: {
+          title: "深夜魅影 · 夜行老饕的靈魂歸宿",
+          time: "21:30 - 04:00",
+          stall: "魚市場爌肉飯 / 阿正爌肉飯",
+          feature: "銷魂半熟荷包蛋 · 蹄筋與龍骨髓",
+          quote: "深更半夜，整座城市安靜入眠，唯有夜市街角那口大油鍋依舊咕嘟咕嘟翻滾。半熟蛋黃流瀉在熱騰騰肥肉上，是夜裡最極致的救贖。",
+          cutRecommendation: "推薦部位：圈仔（腿庫筋皮）——富含膠原的Q彈嚼感，沾裹蛋黃醬汁入喉，銷魂無比。",
+          badge: "深夜傳奇"
+        }
+      };
+
+      // 切換時鐘時段
+      function switchTimeSlot(slotKey) {
+        // 更新按鈕狀態
+        document.querySelectorAll('.time-tab-btn').forEach(btn => {
+          btn.classList.remove('bg-ink-950', 'text-white', 'border-ink-950');
+          btn.classList.add('bg-white', 'text-ink-800', 'border-stone-200');
+        });
+        const currentBtn = document.getElementById('tab-' + slotKey);
+        if (currentBtn) {
+          currentBtn.classList.remove('bg-white', 'text-ink-800', 'border-stone-200');
+          currentBtn.classList.add('bg-ink-950', 'text-white', 'border-ink-950');
+        }
+
+        const data = timeSlotsData[slotKey];
+        const container = document.getElementById('time-slot-display');
+        
+        container.innerHTML = `
+          <div class="flex flex-col md:flex-row items-start justify-between gap-6">
+            <div class="space-y-3 flex-1">
+              <div class="flex items-center gap-3">
+                <span class="text-xs bg-braised-100 text-braised-700 px-2 py-0.5 font-bold font-serif">${data.badge}</span>
+                <span class="text-xs text-stone-500 font-mono tracking-wider">${data.time}</span>
+              </div>
+              <h3 class="text-xl sm:text-2xl font-serif font-bold text-ink-950">${data.title}</h3>
+              <p class="text-xs font-mono text-braised-600 font-semibold">代表名店群：${data.stall} · ${data.feature}</p>
+              <p class="text-sm text-ink-700 font-serif leading-relaxed italic pt-2">
+                "${data.quote}"
+              </p>
+            </div>
+            <div class="w-full md:w-64 bg-paper-50 p-4 border hairline-border shrink-0">
+              <span class="text-[11px] font-bold text-ink-900 font-serif block mb-1">【部位考證筆記】</span>
+              <p class="text-xs text-ink-700 font-serif leading-relaxed">
+                ${data.cutRecommendation}
+              </p>
+            </div>
+          </div>
+        `;
+      }
+
+      // 初始化時鐘
+      switchTimeSlot('dawn');
+
+      // 2. 預購計算器狀態
+      let currentQuantity = 1;
+      const planPrices = {
+        bundle: 1080,
+        book_only: 380,
+        double_bundle: 2050
+      };
+      const planNames = {
+        bundle: "1+1+1 終極有料典藏組",
+        book_only: "《爌肉之城》單本特輯",
+        double_bundle: "雙人同享組（兩套 1+1+1）"
+      };
+
+      function adjustQuantity(delta) {
+        currentQuantity = Math.max(1, currentQuantity + delta);
+        document.getElementById('quantity-display').innerText = currentQuantity;
+        updatePreorderCalc();
+      }
+
+      function updatePreorderCalc() {
+        const selectedPlan = document.querySelector('input[name="plan"]:checked').value;
+        const selectedDelivery = document.querySelector('input[name="delivery"]:checked').value;
+        const unitPrice = planPrices[selectedPlan];
+        
+        let subtotal = unitPrice * currentQuantity;
+        let shippingFee = 0;
+        
+        const noteEl = document.getElementById('shipping-note');
+        if (selectedDelivery === 'shipping') {
+          if (subtotal >= 1500) {
+            shippingFee = 0;
+            noteEl.innerText = "（滿千五免運）";
+          } else {
+            shippingFee = 80;
+            noteEl.innerText = "（含本島宅配運費 NT$ 80）";
+          }
+          document.getElementById('address-field').classList.remove('hidden');
+          document.getElementById('cust-address').required = true;
+        } else {
+          shippingFee = 0;
+          noteEl.innerText = "（彰化市區自取免運）";
+          document.getElementById('address-field').classList.add('hidden');
+          document.getElementById('cust-address').required = false;
+        }
+
+        const total = subtotal + shippingFee;
+        document.getElementById('total-amount-display').innerText = `NT$ ${total.toLocaleString()}`;
+
+        // 同步彈窗摘要
+        document.getElementById('modal-plan-name').innerText = planNames[selectedPlan];
+        document.getElementById('modal-qty').innerText = currentQuantity;
+        document.getElementById('modal-total').innerText = `NT$ ${total.toLocaleString()}`;
+      }
+
+      // 3. 彈窗 Modal 控制
+      function openPreorderModal() {
+        updatePreorderCalc();
+        document.getElementById('preorder-modal').classList.remove('hidden');
+        document.getElementById('preorder-modal').classList.add('flex');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closePreorderModal() {
+        document.getElementById('preorder-modal').classList.add('hidden');
+        document.getElementById('preorder-modal').classList.remove('flex');
+        document.body.style.overflow = '';
+      }
+
+      function submitPreorder(e) {
+        e.preventDefault();
+        document.getElementById('order-form').classList.add('hidden');
+        document.getElementById('order-success').classList.remove('hidden');
+      }
+
+      // 4. FAQ 折疊控制
+      function toggleFaq(index) {
+        const ans = document.getElementById('faq-ans-' + index);
+        const icon = document.getElementById('faq-icon-' + index);
+        if (ans.classList.contains('hidden')) {
+          ans.classList.remove('hidden');
+          icon.innerText = '−';
+          icon.classList.add('text-braised-600');
+        } else {
+          ans.classList.add('hidden');
+          icon.innerText = '+';
+          icon.classList.remove('text-braised-600');
+        }
+      }
+
+      // 5. 燈箱功能 (Lightbox)
+      function openLightbox(imgSrc, caption) {
+        const lb = document.getElementById('image-lightbox');
+        document.getElementById('lightbox-img').src = imgSrc;
+        document.getElementById('lightbox-caption').innerText = caption;
+        lb.classList.remove('hidden');
+        lb.classList.add('flex');
+        document.body.style.overflow = 'hidden';
+      }
+
+      function closeLightbox(e) {
+        if (e.target.id === 'image-lightbox' || e.target.tagName === 'BUTTON' || e.target.parentElement.tagName === 'BUTTON') {
+          const lb = document.getElementById('image-lightbox');
+          lb.classList.add('hidden');
+          lb.classList.remove('flex');
+          document.body.style.overflow = '';
+        }
+      }
+
+      document.addEventListener('keydown', function(e) {
+        if (e.key === 'Escape') {
+          document.getElementById('image-lightbox').classList.add('hidden');
+          document.getElementById('image-lightbox').classList.remove('flex');
+          closePreorderModal();
+          document.body.style.overflow = '';
+        }
+      });
+
+      // 6. 閱讀進度條
+      window.addEventListener('scroll', function() {
+        const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+        const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+        const scrolled = (winScroll / height) * 100;
+        document.getElementById('scroll-progress').style.width = scrolled + '%';
+      });
+
+      // 7. 複製連結回饋
+      function copyPageLink() {
+        navigator.clipboard.writeText(window.location.href).then(() => {
+          const txt = document.getElementById('copy-text');
+          txt.innerText = '已複製連結！';
+          setTimeout(() => {
+            txt.innerText = '複製本頁連結';
+          }, 2500);
+        }).catch(() => {
+          const txt = document.getElementById('copy-text');
+          txt.innerText = '請直接複製網址';
+        });
+      }
+    </script>
+  </body>
+</html>
